@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <img src="../img/nodejs 1.png" style="width: 10000px; height: 500px;" alt="">
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="../img/icono 1.png" style="margin: left: ;width: 150px; height: 150px; " alt="">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Link 1</button>
+                    <a href="primera_parte.html">
+                    <button class="btn btn-primary" type="button">Link 2</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="../img/nodejs 2.png" class="rounded md-auto d-block"
+                            alt="Hotel room image">
+                        <div class="card-body">
+                            <h4 class="card-title">>Node.Js</h4>
+                            <p class="card-text">¿Qué es Nodo.Js?
+                                Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables, como por ejemplo, servidores web.4​ Fue creado por Ryan Dahl en 2009 y su evolución está apadrinada por la empresa Joyent, que además tiene contratado a Dahl en plantilla.5​6​
+
+Node.js es similar en su propósito a Twisted o Tornado de Python, Perl Object Environment de Perl, libevent o libev de C, EventMachine de Ruby, vibe.d de D y Java EE de Java existe Apache MINA, Netty, Akka, Vert.x, Grizzly o Xsocket. Al contrario que la mayoría del código JavaScript, no se ejecuta en un navegador, sino en el servidor. Node.js implementa algunas especificaciones de CommonJS.7​ Node.js incluye un entorno REPL para depuración interactiva.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="../img/node js 3.png" alt="Hotel room image">
+                        <div class="card-body" style="">
+                            <h4 class="card-title">Funcionamiento Node.Js</h4>
+                            <p class="card-text">Node.js funciona con un modelo de evaluación de un único hilo de ejecución, usando entradas y salidas asíncronas las cuales pueden ejecutarse concurrentemente en un número de hasta cientos de miles sin incurrir en costos asociados al cambio de contexto.8​ Este diseño de compartir un único hilo de ejecución entre todas las solicitudes atiende a necesidades de aplicaciones altamente concurrentes, en el que toda operación que realice entradas y salidas debe tener una función callback. Un inconveniente de este enfoque de único hilo de ejecución es que Node.js requiere de módulos adicionales como cluster9​ para escalar la aplicación con el número de núcleos de procesamiento de la máquina en la que se ejecuta.
+
+                                V8</p><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="../img/node js 4.png" class="rounded md-auto d-block"
+                            alt="Hotel room image">
+                        <div class="card-body">
+                            <h4 class="card-title">Modulos Nodos.Js</h4>
+                            <p class="card-text">Node.js incorpora varios "módulos básicos" compilados en el propio binario, como por ejemplo el módulo de red, que proporciona una capa para programación de red asíncrona y otros módulos fundamentales, como por ejemplo Path, FileSystem, Buffer, Timers y el de propósito más general Stream. Es posible utilizar módulos desarrollados por terceros, ya sea como archivos ".node" precompilados, o como archivos en Javascript plano. Los módulos Javascript se implementan siguiendo la especificación CommonJS para módulos,10​ utilizando una variable de exportación para dar a estos scripts acceso a funciones y variables implementadas por los módulos.11​
+
+                                Los módulos de terceros pueden extender node.js o añadir un nivel de abstracción, implementando varias utilidades middleware para utilizar en aplicaciones web, como por ejemplo los frameworks connect y express. Pese a que los módulos pueden instalarse como archivos simples, normalmente se instalan utilizando el Node Package Manager (npm) que nos facilitará la compilación, instalación y actualización de módulos así como la gestión de las dependencias. Además, los módulos que no se instalen en el directorio por defecto de módulos de Node necesitarán la utilización de una ruta relativa para poder encontrarlos. El wiki Node.js proporciona una lista de varios de los módulos de terceros disponibles
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><br>
+        <div class="h1" style="text-align: center;">
+            <h1>Bucle de eventos</h1><br>
+        </div>
+        <div class="h2" style="text-align: justify;">
+            <p> 
+                Node.js se registra con el sistema operativo y cada vez que un cliente establece una conexión se ejecuta un callback. Dentro del entorno de ejecución de Node.js, cada conexión recibe una pequeña asignación de espacio de memoria dinámico, sin tener que crear un hilo de ejecución.12​ A diferencia de otros servidores dirigidos por eventos, el bucle de gestión de eventos de Node.js no es llamado explícitamente sino que se activa al final de cada ejecución de una función callback. El bucle de gestión de eventos se termina cuando ya no quedan eventos por atender.
+            
+              
+            </p>
+            <p>
+                Node.js utiliza la arquitectura «Single Threaded Event Loop» para manejar múltiples clientes al mismo tiempo. Para entender en qué se diferencia de otros tiempos de ejecución, tenemos que entender cómo se manejan los clientes concurrentes multihilo en lenguajes como Java.
+
+                En un modelo de solicitud-respuesta multihilo, varios clientes envían una solicitud y el servidor procesa cada una de ellas antes de devolver la respuesta. Sin embargo, se utilizan múltiples hilos para procesar las llamadas concurrentes. Estos hilos se definen en un pool de hilos, y cada vez que llega una petición, se asigna un hilo individual para manejarla.
+                
+                 
+            <p>
+                
+
+                Node.js funciona de forma diferente. Echemos un vistazo a cada paso que atraviesa:
+
+                Node.js mantiene un pool de hilos limitado para atender las peticiones.
+                Cada vez que llega una solicitud, Node.js la coloca en una cola.
+                Ahora, el «bucle de eventos» de un solo hilo -el componente principal- entra en escena. Este bucle de eventos espera las peticiones indefinidamente.
+                Cuando llega una solicitud, el bucle la recoge de la cola y comprueba si requiere una operación de entrada/salida (E/S) de bloqueo. Si no es así, procesa la solicitud y envía una respuesta.
+                Si la solicitud tiene una operación de bloqueo que realizar, el bucle de eventos asigna un hilo del pool de hilos internos para procesar la solicitud. Los hilos internos disponibles son limitados. Este grupo de hilos auxiliares se llama grupo de trabajadores.
+                El bucle de eventos rastrea las solicitudes que se bloquean y las coloca en la cola una vez que se procesa la tarea que se bloquea. Así es como mantiene su naturaleza no bloqueante.
+                Dado que Node.js utiliza menos hilos, utiliza menos recursos/memoria, lo que resulta en una ejecución más rápida de las tareas. Así que para nuestros propósitos, esta arquitectura de un solo hilo es equivalente a la arquitectura multihilo. Cuando uno necesita procesar tareas con muchos datos, entonces tiene mucho más sentido utilizar lenguajes multihilo como Java. Pero para aplicaciones en tiempo real, Node.js es la opción obvia.
+            </p>
+            <p>
+                Node.js ha crecido rápidamente en los últimos años. Esto es gracias a la vasta lista de características que ofrece:
+
+Easy – Node.js es bastante fácil de empezar. Es una opción para los principiantes en el desarrollo web. Con un montón de tutoriales y una gran comunidad, empezar es muy fácil.
+Escalable – proporciona una gran escalabilidad para las aplicaciones. Node.js, al ser de un solo hilo, es capaz de manejar un gran número de conexiones simultáneas con un alto rendimiento.
+Velocidad – La ejecución de hilos sin bloqueo hace que Node.js sea aún más rápido y eficiente.
+Paquetes – existe un amplio conjunto de paquetes de Node.js de código abierto que pueden simplificar tu trabajo. Actualmente hay más de un millón de paquetes en el ecosistema NPM.
+Sólido respaldo – Nodo.js está escrito en C y C++, lo que le confiere rapidez y añade características como la compatibilidad con redes.
+Multiplataforma – el soporte multiplataforma le permite crear sitios web SaaS, aplicaciones de escritorio e incluso aplicaciones móviles, todo ello utilizando Node.js.
+Maintainable – Node.js es una opción fácil para los desarrolladores ya que tanto el frontend como el backend pueden ser gestionados con JavaScript como un único lenguaje.
+            </p>
+            </p>
+        </div><br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" style="display: flex; object-position: right: auto;"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Has clic aqui!!
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Es un gusto saludarte.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <footer class="bg-dark text-white py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Lina Marcela Toro  - Tecnologico de Antioquia </p>
+                        <a href="#" class="text-white me-3\"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3\"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3\"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>2023 &copy; Todos los derechos reservados. </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
